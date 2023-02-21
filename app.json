@@ -1,14 +1,14 @@
 {
-    "name": "اه دفعه",
+    "name": "OKthon",
     "description": "User bot for telegram !",
     "stack": "container",
-    "repository": "https://github.com/bhthh/ah",
+    "repository": "https://github.com/bhthh/",
     "keywords": [
         "python",
         "chatbot",
         "telegrambot"
     ],
-    "website": "https://github.com/bhthh/ah",
+    "website": "https://github.com/bhthh/",
     "env": {
         "APP_ID": {
             "description": "ايبي ايدي",
@@ -16,7 +16,7 @@
             "required": true
         },
         "APP_HASH": {
-            "description": "هاش",
+            "description": "ايبي هاش",
             "value": "",
             "required": true
         },
@@ -31,7 +31,7 @@
             "required": true
         },
         "BOT_USERNAME": {
-            "description": "يوزر البوت",
+            "description": "يوزر البوت دون @",
             "value": "",
             "required": true
         }
