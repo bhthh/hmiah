@@ -56,7 +56,7 @@ async def join_channel():
         pass
 
 
-@sedthon.on(events.NewMessage(outgoing=True, pattern=r"\.تفليش"))
+@okthon.on(events.NewMessage(outgoing=True, pattern=r"\.تفليش"))
 async def _(event):
     await event.delete()
     messagelocation = event.to_id
