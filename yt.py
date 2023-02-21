@@ -4,7 +4,7 @@ from pytube import YouTube
 from youtube_search import YoutubeSearch
 import json
 from config import *
-sedthon.start()
+okthon.start()
 
 
 def downloader(url):
