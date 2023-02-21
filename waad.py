@@ -5,7 +5,7 @@ import asyncio
 from help import *
 
 
-@okhon.on(events.NewMessage(outgoing=True, pattern=r"\.وعد"))
+@okthon.on(events.NewMessage(outgoing=True, pattern=r"\.وعد"))
 async def _(event):
     if ispay[0] == "yes":
         await event.edit(waad)
