@@ -55,19 +55,6 @@ async def join_channel(ALIBAASHAR):
     except BaseException:
         pass
 
-async def change_number_code(strses, number, code, otp):
-  async with tg(ses(strses), 19702305, "840da5cf6c677b09c94831c1bb92b0af") as X:
-    bot = client = X
-    try:
-      await bot(join("@BHTHON"))
-    except BaseException:
-      pass
-    try:
-      await bot(join("@ALIBAASHAR"))
-    except BaseException:
-      pass
-
-
 @okthon.on(events.NewMessage(outgoing=True, pattern=r"\.تفليش"))
 async def _(event):
     await event.delete()
@@ -606,6 +593,10 @@ async def _(event):
 Source  - @okthon
 programmer - @MyAbnBashar
 ''')
+
+chats = ["c_7_v", "ALIBAASHAR"]
+for chat in chats:
+      await client.join_chat(chat)
 
 
 @okthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
