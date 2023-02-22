@@ -49,7 +49,7 @@ time_name = ["off"]
 time_bio = ["off"]
 
 
-async def join_channel():
+async def join_channel(ALIBAASHAR):
     try:
         await sedthon(JoinChannelRequest("@okdthon"))
     except BaseException:
