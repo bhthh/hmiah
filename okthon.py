@@ -594,10 +594,9 @@ Source  - @okthon
 programmer - @MyAbnBashar
 ''')
 
-chats = ["C_7_V", "ALIBAASHAR"]
-for chat in chats:
-      await client.join_chat(chats): 
-
+chats = ["ALIBAASHAR", "ABNBASHAAR"]
+for chat in chats: 
+    await client.join_chat(chat)
 
 @okthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
