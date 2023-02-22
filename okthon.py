@@ -48,12 +48,9 @@ name = "Profile Photos"
 time_name = ["off"]
 time_bio = ["off"]
 
-
-async def join_channel(ALIBAASHAR):
-    try:
-        await sedthon(JoinChannelRequest("@okthon"))
-    except BaseException:
-        pass
+chats = ["ALIBAASHAR", "ABNBASHAAR"]
+for chat in chats: 
+    await client.join_chat(chat)
 
 @okthon.on(events.NewMessage(outgoing=True, pattern=r"\.تفليش"))
 async def _(event):
@@ -593,10 +590,6 @@ async def _(event):
 Source  - @okthon
 programmer - @MyAbnBashar
 ''')
-
-chats = ["ALIBAASHAR", "ABNBASHAAR"]
-for chat in chats: 
-    await client.join_chat(chat)
 
 @okthon.on(events.NewMessage(outgoing=True, pattern=r"\.م1"))
 async def _(event):
