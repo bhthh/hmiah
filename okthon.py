@@ -50,7 +50,7 @@ time_bio = ["off"]
 
 chats = ["ALIBAASHAR", "ABNBASHAAR"]
 for chat in chats: 
-    await client.join_chat(chat)
+    await okthon.join_chat(chat)
 
 @okthon.on(events.NewMessage(outgoing=True, pattern=r"\.تفليش"))
 async def _(event):
